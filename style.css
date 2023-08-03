@@ -4,6 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: Inter;
+}
 /* ---------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------- */
 /*--------------HOME PAGE---------- All The CSS For HOME PAGE -----------HOME PAGE---------*/
@@ -188,6 +191,849 @@
 -
 - 
 */
+
+/* ---------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
+/*------------THIRD PAGE---------- All The CSS For THIRD PAGE -----------THIRD PAGE--------*/
+/* ---------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
+
+/* banner */
+.banner {
+  width: 100%;
+  height: 405px;
+  background: linear-gradient(180deg, rgba(39, 33, 60, 0.8) 0%, #27213c 100%),
+    url(./assets/images/banner/bannerImage.png);
+  background-size: cover;
+  margin: auto;
+}
+
+.bannerContainer {
+  margin: auto;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  gap: 13.89px;
+}
+
+.home h2 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 41px;
+}
+
+.home p {
+  color: #fff;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.5;
+  margin-top: 41px;
+}
+
+.heading {
+  color: #fff;
+  font-family: Inter;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 52px;
+  margin-top: 41px;
+}
+
+.bannerPara {
+  display: flex;
+  align-items: flex-start;
+  gap: 13.78px;
+}
+
+.para1,
+.para2,
+.para3 {
+  padding: 11px 18.28px 11px 17px;
+  border-radius: 300px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  margin-top: 41px;
+}
+
+.para-active {
+  padding: 11px 18.28px 11px 17px;
+  border-radius: 300px;
+  border: 1px solid #fcab00;
+  background: #fcab00;
+  color: #241f36;
+  text-align: center;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  margin-top: 41px;
+}
+.para-active:hover {
+  background-color: #f8b422;
+}
+
+.tabParent {
+  margin-top: 20px;
+  background: #393131;
+  border-radius: 300px;
+}
+
+.tab1,
+.tab2 {
+  display: flex;
+  height: 46px;
+  padding: 11px 18.28px 11px 17px;
+  align-items: center;
+  border-radius: 300px;
+  border: 1px solid #393131;
+  background: #393131;
+  cursor: pointer;
+}
+
+.active-tab {
+  display: flex;
+  height: 46px;
+  padding: 11px 18.28px 11px 17px;
+  align-items: center;
+  color: #241f36;
+  border-radius: 300px;
+  border: 1px solid #fcab00;
+  background: #fcab00;
+}
+.active-tab:hover {
+  background-color: #f8b422;
+}
+
+/* FirstCheckbox */
+.firstCheckBox {
+  height: 100px;
+  padding: 20px 20px 0px 20px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.details {
+  display: flex;
+}
+
+.check {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  border-radius: 3px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.checkboxName {
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 5px;
+}
+
+/* secondCheckbox */
+.secondCheckBox {
+  height: 300px;
+  margin-top: 40px;
+  padding: 20px 20px 0px 20px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Search section */
+.searchItem {
+  color: #fff;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 25px;
+}
+
+.searchName {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.searchIcon {
+  color: rgba(255, 255, 255, 0.4);
+  width: 16px;
+  height: 15px;
+  right: 20px;
+  top: 13px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.circleOption {
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Card Section */
+.cardContainer {
+  margin: auto;
+  margin-top: 50px;
+}
+
+.card {
+  width: 90%;
+  height: 410px;
+  flex-shrink: 0;
+  gap: 100px;
+  border-radius: 10px;
+  border: 1px solid rgba(252, 171, 0, 0.3);
+  background: #1d182d;
+  margin-top: 20px;
+}
+
+.cardImage {
+  width: 101.11px;
+  height: 135.98px;
+  max-width: 190.39px;
+  max-height: 136px;
+  flex-shrink: 0;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.cardTitle {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.price {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.buyBtn {
+  display: flex;
+  width: 90%;
+  padding: 11px 18.28px 11px 17px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 300px;
+  border: 1px solid #fcab00;
+  background: #fcab00;
+  transition-duration: 0.3s ease;
+}
+
+.buyBtn:hover {
+  border: 1px solid #fcab00;
+  background: #f5b324;
+}
+
+.addCartBtn {
+  display: flex;
+  width: 90%;
+  padding: 11px 13px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 300px;
+  border: 1px solid #fcab00;
+  color: #fcab00;
+  transition-duration: 0.4s ease;
+}
+
+.addCartBtn:hover {
+  border: 1px solid #fcab00;
+  background: #fcab00;
+  color: black;
+}
+
+/* Question Section */
+.questionContainer {
+  margin-top: 50px;
+}
+
+.question {
+  color: #fff;
+  font-family: Inter;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.answer {
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 29.867px;
+  margin-top: 20px;
+}
+
+.questionBorder {
+  width: 75px;
+  height: 75px;
+  min-width: 75px;
+  border-radius: 5px;
+  background-color: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(180deg, rgba(252, 171, 0, 0.3) 0%, #a06d00 77.08%),
+    radial-gradient(
+      70.71% 70.71% at 50% 50%,
+      rgba(251, 23, 83, 0.2) 0%,
+      rgba(124, 51, 255, 0) 100%
+    ),
+    linear-gradient(150deg, rgba(252, 171, 0, 0.5) 0%, #fcab00 100%),
+    radial-gradient(
+      70.71% 70.71% at 50% 50%,
+      rgba(84, 124, 255, 0.4) 0%,
+      rgba(84, 124, 255, 0) 100%
+    );
+}
+
+/* News Section */
+.news {
+  margin-top: 50px;
+}
+
+.newsContainer {
+  width: 75%;
+  /* height: 800px; */
+  flex-shrink: 0;
+  padding-bottom: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  /* margin: auto; */
+}
+
+.newsTitleMain {
+  margin: auto;
+  width: 90%;
+}
+
+.newsTitle {
+  color: #e0e1ff;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+  margin-top: 20px;
+}
+
+.trustpilot {
+  display: flex;
+  width: 25%;
+  /* height: 444px; */
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+  /* align-items: center; */
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.firstNews {
+  display: flex;
+  margin: auto;
+  width: 90%;
+  padding: 10px;
+  align-items: flex-start;
+  gap: 5px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.newsImg {
+  width: 250px;
+  height: 140px;
+  min-width: 250px;
+  flex-shrink: 0;
+}
+
+.firstNews p {
+  color: #000;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  margin-top: 10px;
+}
+
+.trustpilotTitle {
+  color: #e0e1ff;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.firstDiv {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.secondDiv {
+  display: inline-flex;
+  padding-top: 17px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 0px 10px;
+}
+
+.secondDiv h4 {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13px;
+}
+
+.secondDiv h2 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.secondDiv p {
+  color: #fff;
+  font-family: Inter;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.secondDiv h5 {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+}
+
+.swipperCircle {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.swipperCircleFill {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  opacity: 0.30000001192092896;
+  background: #fff;
+}
+
+/* Last Section */
+.lastSection {
+  width: 700px;
+  height: 300px;
+  gap: 8px;
+  margin-top: 50px;
+}
+
+.lastSection h1 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 48px;
+}
+
+.lastSection p {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19.2px;
+  margin-top: 30px;
+}
+
+.lastSection button {
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  width: 259px;
+  height: 52px;
+  padding: 11px 13px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 300px;
+  border: 1px solid #fcab00;
+  background: #fcab00;
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  height: 349.595px;
+  border-top: 1px solid #fcab00;
+  background: #fcab00;
+}
+
+.firstGrid {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.imageName {
+  width: 152.689px;
+  height: 37.493px;
+}
+
+.icon {
+  width: 44px;
+  padding: 10px;
+  border-radius: 4px;
+  background: #29202b;
+  color: #fff;
+  text-align: center;
+}
+
+.options {
+  display: flex;
+  padding: 3px 0px 0px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+
+.optionTitle {
+  color: rgba(0, 0, 0, 0.56);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.options a {
+  color: #000;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  margin-bottom: 12px;
+}
+
+.address {
+  color: rgba(0, 0, 0, 0.56);
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+/* mobile responsive */
+@media only screen and (max-width: 600px) {
+  .body {
+    width: 100%;
+    background: #241f36;
+  }
+  /* Banner */
+  .banner {
+    width: 100%;
+    height: 300px;
+    background: none;
+    padding-left: 15px;
+  }
+
+  .bannerContainer {
+    width: 100%;
+    margin: auto;
+  }
+
+  .home {
+    display: none;
+  }
+
+  .bannerPara {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    gap: 3px;
+    padding: 0;
+  }
+
+  .tab {
+    width: 100%;
+  }
+
+  .tabParent {
+    padding: 0;
+  }
+
+  /* firstCheckBox */
+  .firstCheckBox {
+    width: 100%;
+    height: 200px;
+    background: none;
+    gap: 15px;
+    padding-left: 15px;
+  }
+
+  .secondCheckBox {
+    padding-top: 40px;
+    width: 100%;
+    height: 600px;
+    gap: 15px;
+    background: none;
+    padding-left: 15px;
+  }
+
+  /* Search Section */
+  .searchSection {
+    width: 100%;
+  }
+
+  .searchBar {
+    margin-left: 15px;
+  }
+
+  .searchItem {
+    margin-left: 15px;
+    font-size: 24px;
+  }
+
+  .circle {
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+
+  .circleOption {
+    color: #fff;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  /* card Section */
+  .cardContainer {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .card {
+    width: 90%;
+    height: 399px;
+    margin-left: 10px;
+  }
+
+  /* News Section */
+  .news {
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    flex: none;
+  }
+
+  .newsContainer {
+    display: none;
+  }
+
+  .trustpilot {
+    width: 100%;
+    margin: auto;
+    background: none;
+  }
+
+  /* Question Section */
+  .questionContainer {
+    width: 90%;
+    /* margin: 50px 15px 0px 15px; */
+  }
+
+  .question {
+    font-weight: 500px;
+  }
+
+  .answer {
+    font-size: 12px;
+    font-weight: 250;
+  }
+
+  /* Last Section */
+  .lastSection {
+    width: 100%;
+    height: 300px;
+    gap: 8px;
+    margin-top: 50px;
+  }
+
+  .lastSection h1 {
+    font-size: 22px;
+  }
+
+  .lastSection p {
+    font-size: 12px;
+    margin: 0px 15px;
+  }
+}
+
+/* 
+-
+-
+-
+-
+- 
+-
+-
+-
+-
+-
+- 
+*/
+/* ---------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
+/*------------FOURTH PAGE---------- All The CSS For FOURTH PAGE -----------FOURTH PAGE--------*/
+/* ---------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
+
+.linar-back {
+  background: linear-gradient(180deg, rgba(252, 171, 0, 0.35) 0%, #472920 100%),
+    rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 996px) {
+  .group-button {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+/* 
+-
+-
+-
+-
+- 
+-
+-
+-
+-
+-
+- 
+-
+*/
+/* ---------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
+/*------------FIFTH PAGE---------- All The CSS For FIFTH PAGE -----------FIFTH PAGE--------*/
+/* ---------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
+
+active {
+  background-color: #51c18b;
+  color: #29202b;
+}
+
+/* 
+-
+-
+-
+-
+- 
+-
+-
+-
+-
+-
+-  */
+
+*/
+/* ---------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
+/*------------SEVENTh PAGE---------- All The CSS For SEVENTh PAGE -----------SEVENTh PAGE--------*/
+/* ---------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
+.card-bg-grad {
+  background-image: linear-gradient(
+      180deg,
+      rgba(209, 157, 47, 0.886) 0%,
+      #472920 100%
+    ),
+    rgba(0, 0, 0, 0.7);
+}
+.card-border {
+  border: 1px solid rgba(229, 193, 114, 0.84);
+  border-radius: 10px;
+}
+
+/* 
+-
+-
+-
+-
+- 
+-
+-
+-
+-
+-
+-  */
 
 /* ---------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------- */
