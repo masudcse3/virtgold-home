@@ -101,8 +101,8 @@
             >
               Login
             </button>
-            <!-- Sign Up Button -->
             <div class="flex items-center gap-[7px]">
+              <!-- Sign Up Button -->
               <button
                 class="p-[7px_9px_7px_9px] lg:p-[11px_18px_11px_17px] text-[13px] text-[#27213C] leading-[22px] font-[700] border border-[#FCAB00] bg-[#FCAB00] text-center rounded-[300px] hover:bg-[#fcb826] duration-200"
               >
@@ -257,6 +257,12 @@
                         type="text"
                         class="w-full outline-0 focus:outline-0 p-2 bg-transparent border border-[#FCAB00] border-opacity-50 rounded-[10px]"
                       />
+                      <!-- Apply button -->
+                      <button
+                        class="w-full py-[7px] text-center bg-white bg-opacity-20 mt-2 rounded-[5px]"
+                      >
+                        Apply
+                      </button>
                     </div>
                   </div>
                   <!-- Subtotal Section -->
@@ -276,7 +282,7 @@
                       Total Cost
                     </h1>
                     <p class="text-[16px] leading-[27px] font-[700] text-white">
-                      $ <span class="carts-total">5397</span>
+                      $ <span id="carts-total">5397</span>
                     </p>
                   </div>
                   <!-- Checkout button -->
@@ -531,6 +537,12 @@
                           type="text"
                           class="w-full outline-0 focus:outline-0 p-2 bg-transparent border border-[#FCAB00] border-opacity-50 rounded-[10px]"
                         />
+                        <!-- Apply button -->
+                        <button
+                          class="w-full py-[7px] text-center bg-white bg-opacity-20 mt-2 rounded-[5px]"
+                        >
+                          Apply
+                        </button>
                       </div>
                     </div>
                     <!-- Subtotal Section -->
@@ -957,14 +969,12 @@
                       class="pb-[15px] text-[16px] leading-[27px] font-[400] space-y-[7px]"
                     >
                       <h2>Promo Code</h2>
-                      <div
-                        class="w-full border rounded-[300px] px-5 py-[10px] flex items-center justify-between"
-                      >
-                        <h1>Enter your code</h1>
-                        <i
-                          class="fa-solid fa-chevron-down cursor-pointer"
-                          id="open-shipping-charge-box"
-                        ></i>
+                      <div>
+                        <input
+                          type="text"
+                          class="bg-transparent text-white rounded-[300px] border w-full text-white px-5 py-[10px] focus:outline-0 focus:ring-0"
+                          placeholder="Enter your code"
+                        />
                       </div>
                     </div>
                     <!-- Apply button -->

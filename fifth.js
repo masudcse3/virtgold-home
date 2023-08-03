@@ -71,13 +71,13 @@ function addAnchor(
 ) {
   document.getElementById(
     goldId
-  ).innerHTML = `<a href="#" class="w-[120px] h-[44px] text-center rounded-[300px] p-[11px] lg:px-[17px] lg:py-[11px] bg-[#FCAB00] text-[13px] leading-[22px] font-bold text-[#27213C]">${goldTitle}</a>`;
+  ).innerHTML = `<a href="#" class="p-2 py-3 text-[10px] md:w-[120px] h-[44px] text-center rounded-[300px] md:p-[11px] lg:px-[17px] lg:py-[11px] md:text-[13px] leading-[22px] bg-[#FCAB00] font-bold text-[#27213C]">${goldTitle}</a>`;
   document.getElementById(
     silverId
-  ).innerHTML = `<a href="#" class="w-[120px] h-[44px] text-center rounded-[300px] p-[11px] lg:px-[17px] lg:py-[11px] bg-[#FFFFFF33] text-[#FFFFFF] text-[13px] leading-[22px] font-bold">${silverTitle1}</a>`;
+  ).innerHTML = `<a href="#" class="p-2 py-3 text-[10px] md:w-[120px] h-[44px] text-center rounded-[300px] md:p-[11px] lg:px-[17px] lg:py-[11px] md:text-[13px] leading-[22px] bg-[#FFFFFF33] font-bold text-[#FFFFFF]">${silverTitle1}</a>`;
   document.getElementById(
     silverId2
-  ).innerHTML = `<a href="#" class="w-[120px] h-[44px] text-center rounded-[300px] p-[11px] lg:px-[17px] lg:py-[11px] bg-[#FFFFFF33] text-[#FFFFFF] text-[13px] leading-[22px] font-bold">${SilverTitle2}</a>`;
+  ).innerHTML = `<a href="#" class="p-2 py-3 text-[10px] md:w-[120px] h-[44px] text-center rounded-[300px] md:p-[11px] lg:px-[17px] lg:py-[11px] md:text-[13px] leading-[22px] bg-[#FFFFFF33] font-bold text-[#FFFFFF]">${SilverTitle2}</a>`;
 }
 //card buttons tab functionality
 const buttons = document.querySelectorAll(".btns");

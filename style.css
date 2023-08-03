@@ -290,6 +290,39 @@ body {
   background-color: #f8b422;
 }
 
+@media screen and (max-width: 768px) {
+  .para1,
+  .para2,
+  .para3,
+  .para-active {
+    padding: 10px 12px;
+    font-size: 10px;
+  }
+  .tab1,
+  .tab2,
+  .active-tab {
+    padding: 10px 12px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .para1,
+  .para2,
+  .para3,
+  .para-active {
+    padding: 8px;
+    font-size: 10px;
+  }
+  .tab1,
+  .tab2,
+  .active-tab {
+    padding: 10px 12px;
+    font-size: 13px;
+    height: 38px;
+  }
+}
+
 .tabParent {
   margin-top: 20px;
   background: #393131;
