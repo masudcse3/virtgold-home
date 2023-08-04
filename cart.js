@@ -111,10 +111,11 @@ for (let i = 0; i < plusIconButtons.length; i++) {
 
 // For input field
 for (let i = 0; i < itemQuantityFields.length; i++) {
-  itemQuantityFields[i].addEventListener("change", (event) => {
+  itemQuantityFields[i].addEventListener("input", (event) => {
     const quantity = event.target.value;
     if (quantity < 0) {
       alert("Negative value is not acceptable!");
+      event.target.value = 0;
     } else {
       const currentBtn = event.currentTarget;
       const buttonsParentBox = currentBtn.parentNode;

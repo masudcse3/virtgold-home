@@ -9,9 +9,13 @@ let fastPassValue = 25;
 let fastPass_checkbox = document.getElementById("fast-pass-checkbox");
 let input_range = document.getElementById("inputRange");
 
-count.addEventListener('change', () => {
+count.addEventListener('input', () => {
   const quantity = parseInt(count.value);
-  if(quantity < 1){
+  if(!quantity){
+    topSubTotal.innerText = 0;
+    subTotal.innerText =  0;
+  }
+  else if(quantity < 1){
     alert('Value must be greater than 0');
     topSubTotal.innerText = priceValue;
     subTotal.innerText =  priceValue;

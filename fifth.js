@@ -24,14 +24,18 @@ decrementBtn.addEventListener("click", () => {
 });
 //Increment and decrement fields
 
-const quantityForm = document.getElementById('quantity-form');
 
-quantityForm.addEventListener('submit', (event) => {
-  const fieldText = document.getElementById('fieldText');
+// const fieldText = document.getElementById('fieldText');
+
+fieldText.addEventListener('input', (event) => {
   event.preventDefault();
-  if(!fieldText.value){
+  const quantity = event.target.value;
+  if(!quantity){
     priceField.innerText = 0;
-    alert('Please write the Quantity!');
+  }
+  else if(quantity < 0) {
+    priceField.innerText = 0;
+    alert('Negative value is not acceptable!');
   }
   else {
     priceField.innerText = parseInt(fieldText.value) * 4;
