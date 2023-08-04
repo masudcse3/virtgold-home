@@ -57,7 +57,6 @@ function addFastShipping() {
     `;
 }
 
-
 // Increasing cart items and calculating sub-total and total price
 const minusIconButtons = document.querySelectorAll(".minus-icon");
 const plusIconButtons = document.querySelectorAll(".plus-icon");
@@ -77,9 +76,9 @@ for (let i = 0; i < minusIconButtons.length; i++) {
     const itemTotalPriceField = theItemCard.querySelector(".item-price-total");
     const itemTotalPrice = parseInt(itemTotalPriceField.innerText);
     const itemQuantityField = theItemCard.querySelector(".item-quantity");
-    const itemQuantity = parseInt(itemQuantityField.innerText);
+    const itemQuantity = parseInt(itemQuantityField.value);
     if (itemQuantity > 0) {
-      itemQuantityField.innerText = itemQuantity - 1;
+      itemQuantityField.value = itemQuantity - 1;
       itemTotalPriceField.innerText = itemTotalPrice - singleItemPrice;
       calculateCartsTotal();
       calculateCartsGrandTotal();
@@ -101,12 +100,34 @@ for (let i = 0; i < plusIconButtons.length; i++) {
     const itemTotalPriceField = theItemCard.querySelector(".item-price-total");
     const itemTotalPrice = parseInt(itemTotalPriceField.innerText);
     const itemQuantityField = theItemCard.querySelector(".item-quantity");
-    const itemQuantity = parseInt(itemQuantityField.innerText);
+    const itemQuantity = parseInt(itemQuantityField.value);
     // Updating the value
-    itemQuantityField.innerText = itemQuantity + 1;
+    itemQuantityField.value = itemQuantity + 1;
     itemTotalPriceField.innerText = itemTotalPrice + singleItemPrice;
     calculateCartsTotal();
     calculateCartsGrandTotal();
+  });
+}
+
+// For input field
+for (let i = 0; i < itemQuantityFields.length; i++) {
+  itemQuantityFields[i].addEventListener("change", (event) => {
+    const quantity = event.target.value;
+    if (quantity < 0) {
+      alert("Negative value is not acceptable!");
+    } else {
+      const currentBtn = event.currentTarget;
+      const buttonsParentBox = currentBtn.parentNode;
+      const theItemCard = buttonsParentBox.parentNode.parentNode;
+      const singleItemPrice = parseInt(
+        theItemCard.querySelector(".single-item-price").innerText
+      );
+      const itemTotalPriceField =
+        theItemCard.querySelector(".item-price-total");
+      itemTotalPriceField.innerText = quantity * singleItemPrice;
+      calculateCartsTotal();
+      calculateCartsGrandTotal();
+    }
   });
 }
 
@@ -117,30 +138,33 @@ function calculateCartsTotal() {
 
   let total = 0;
 
-  for (let i = 0; i<cartItems.length; i++) {
+  for (let i = 0; i < cartItems.length; i++) {
     const itemTotalPrice = parseInt(
       cartItems[i].querySelector(".item-price-total").innerText
     );
     total += itemTotalPrice;
   }
-  cartsTotalFields.forEach(item => {
+  cartsTotalFields.forEach((item) => {
     item.innerText = total;
-  })
+  });
 }
 
 // Calculating SubTotal
 function calculateCartsGrandTotal() {
-    const grandTotalFields = document.querySelectorAll('.carts-grand-total');
-    const cartsTotalField = document.querySelector('.carts-total');
-    const cartsTotalPrice = parseInt(cartsTotalField.innerText);
-    const shippingChargeField = document.getElementById('shipping-charge');
+  const grandTotalFields = document.querySelectorAll(".carts-grand-total");
+  const cartsTotalField = document.querySelector(".carts-total");
+  const cartsTotalPrice = parseInt(cartsTotalField.innerText);
+  if (cartsTotalPrice > 0) {
+    const shippingChargeField = document.getElementById("shipping-charge");
     const shippingChargePrice = parseInt(shippingChargeField.innerText);
 
     const grandTotal = cartsTotalPrice + shippingChargePrice;
     grandTotalFields.forEach((item) => {
-        item.innerText = grandTotal;
-    })
+      item.innerText = grandTotal;
+    });
+  } else {
+    grandTotalFields.forEach((item) => {
+      item.innerText = 0;
+    });
+  }
 }
-
-
-

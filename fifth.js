@@ -1,30 +1,44 @@
 //Increment and decrement fields
-//initialize value
-let count = 0;
+
 //Select the element with id
 let IncrementBtn = document.getElementById("incrementBtn");
 let decrementBtn = document.getElementById("decrementBtn");
 let fieldText = document.getElementById("fieldText");
 let priceField = document.getElementById("price-amount");
 
+
 IncrementBtn.addEventListener("click", () => {
-  fieldText.innerText = ++count;
-  priceField.innerText = count * 4;
+  let quantity = parseInt(fieldText.value);
+  fieldText.value = quantity + 1;
+  priceField.innerText = parseInt(fieldText.value) * 4;
 });
 
 decrementBtn.addEventListener("click", () => {
-  if (count <= 0) {
+  let quantity = parseInt(fieldText.value);
+  if (quantity <= 0) {
     alert("Negative value not allowed!");
   } else {
-    fieldText.innerText = --count;
-  }
-  if (count <= 0) {
-    priceField.innerText = 0;
-  } else {
-    priceField.innerText = priceField.innerText - 4;
+    fieldText.value = quantity - 1;
+    priceField.innerText = parseInt(fieldText.value) * 4;
   }
 });
 //Increment and decrement fields
+
+const quantityForm = document.getElementById('quantity-form');
+
+quantityForm.addEventListener('submit', (event) => {
+  const fieldText = document.getElementById('fieldText');
+  event.preventDefault();
+  if(!fieldText.value){
+    priceField.innerText = 0;
+    alert('Please write the Quantity!');
+  }
+  else {
+    priceField.innerText = parseInt(fieldText.value) * 4;
+  }
+});
+
+
 
 //tab buttons click then fire the text field
 let firstBtn = document.getElementById("firstBtn");

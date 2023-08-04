@@ -757,9 +757,18 @@
               <div
                 class="h-10 md:w-9/12 mt-6 md:ml-[60px] lg:ml-[90px] sm:mx-4 mx-4 rounded-full border-[#3C4A64] border-2 flex justify-between px-10 items-center text-white"
               >
-                <button id="decrementBtn" class="text-xl">-</button>
-                <p id="fieldText">1</p>
-                <button id="incrementBtn" class="text-xl">+</button>
+                <button id="decrementBtn" class="text-xl px-2">-</button>
+                <form id="quantity-form" class="text-center">
+                  <input
+                    type="number"
+                    id="fieldText"
+                    value="1"
+                    min="0"
+                    class="w-2/3 h-full focus:outline-none bg-transparent text-center"
+                  />
+                </form>
+                <!-- <p id="fieldText" class="border">1</p> -->
+                <button id="incrementBtn" class="text-xl px-2">+</button>
               </div>
 
               <!--==== Count Number M==== -->
@@ -823,7 +832,7 @@
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="currentColor"
-                    class="bg-[#222E44] text-yellow-400 font-bold h-12 py-3 rounded-r-3xl px-4"
+                    class="bg-[#222E44] text-[#FCAB00] font-bold h-12 py-3 rounded-r-3xl px-4"
                   >
                     <path
                       stroke-linecap="round"

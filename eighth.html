@@ -806,7 +806,7 @@
                 <p
                   class="text-3xl font-normal text-white border-b-2 border-white border-opacity-20 mb-11 pb-4"
                 >
-                  $<span id="topSubTotal">0.00</span>
+                  $<span id="topSubTotal">9.99</span>
                 </p>
                 <h3
                   class="text-lg text-white text-opacity-20 font-medium mb-[16px]"
@@ -818,31 +818,47 @@
                     Select
                   </h4>
 
-                  <select
-                    id="selectOption"
-                    oninput="selectOption(this)"
-                    class="w-full p-3 border-2 border-white rounded-md bg-transparent text-white font-normal list-none bg-[#241f36] divide-y divide-[#39334d] cursor-pointer"
-                  >
-                    <option
-                      class="text-black"
-                      selected
-                      value="Raid Level 150 (Normal Mode)"
+                  <div class="relative">
+                    <select
+                      id="selectOption"
+                      oninput="selectOption(this)"
+                      class="w-full appearance-none p-3 border-2 border-white rounded-md bg-transparent text-white font-normal list-none bg-[#241f36] divide-y divide-[#FFFFFF50] cursor-pointer selection:outline-0"
                     >
-                      Raid Level 150 (Normal Mode)
-                    </option>
-                    <option
-                      class="text-black"
-                      value="Raid Level 300 (Excited Mood)"
+                      <option
+                        class="text-white cursor-pointer bg-[#27213C]"
+                        selected
+                        value="Raid Level 150 (Normal Mode)"
+                      >
+                        Raid Level 150 (Normal Mode)
+                      </option>
+                      <option
+                        class="text-white cursor-pointer bg-[#27213C]"
+                        value="Raid Level 300 (Excited Mood)"
+                      >
+                        Raid Level 300 (Excited Mood)
+                      </option>
+                      <option
+                        class="text-white cursor-pointer bg-[#27213C]"
+                        value="Raid Level 450 (Melancholic Mood)"
+                      >
+                        Raid Level 450 (Melancholic Mood)
+                      </option>
+                    </select>
+                    <div
+                      class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none"
                     >
-                      Raid Level 300 (Excited Mood)
-                    </option>
-                    <option
-                      class="text-black"
-                      value="Raid Level 450 (Melancholic Mood)"
-                    >
-                      Raid Level 450 (Melancholic Mood)
-                    </option>
-                  </select>
+                      <!-- Custom arrow icon using inline SVG -->
+                      <svg
+                        class="fill-white h-6 w-6"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M14.293 6.293a1 1 0 0 0-1.414 0L10 8.586 5.707 6.293a1 1 0 1 0-1.414 1.414l5 5a1 1 0 0 0 1.414 0l5-5a1 1 0 0 0 0-1.414z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
 
                   <p
                     class="text-[14px] font-normal text-white leading-5 mt-2 mb-[25px]"
@@ -990,7 +1006,6 @@
                         type="text"
                         value="1"
                         class="outline-none bg-transparent border-white border-y-2 text-center w-12"
-                        readonly
                       />
                       <button
                         onclick="increment()"
